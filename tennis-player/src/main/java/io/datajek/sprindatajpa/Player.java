@@ -6,6 +6,7 @@ import java.sql.Date;
 // @Table annotation is not needed if class and table in database are same
 @Entity
 @Table(name = "Player")
+@NamedQuery(name = "get_all_players", query = "select p from Player p")
 public class Player {
     // @Id is used to generate primary key and @GenerateValue automatically generates the value
     @Id

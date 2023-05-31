@@ -32,17 +32,18 @@ public class TennisPlayerApplication implements CommandLineRunner {
 		));
 
 		logger.info("\n\n>> Inserting Player: {}\n", repo.insertPlayer(
-				new Player("Thiem", "Austria",
-						new Date(System.currentTimeMillis()), 17)));
+				new Player("Thiem", "Austria", new Date(System.currentTimeMillis()), 17)));
 
 //		logger.info("\n\n>> Player with id 2: {}\n", repo.getPlayerById(2));
 
 		//update player
-		logger.info("\n\n>> Updating Player with Id 3: {}\n", repo.updatePlayer(
-				new Player(3, "Thiem", "Austria", Date.valueOf("1993-09-03"), 17)));
+//		logger.info("\n\n>> Updating Player with Id 3: {}\n", repo.updatePlayer(
+//				new Player(3, "Thiem", "Austria", Date.valueOf("1993-09-03"), 17)));
 		//get player
-		logger.info("\n\n>> Player with id 3: {}\n", repo.getPlayerById(3));
+//		logger.info("\n\n>> Player with id 3: {}\n", repo.getPlayerById(3));
+//
+//		repo.deleteById(2);
 
-		repo.deleteById(2);
+		logger.info("All Players Data: {}", repo.getAllPlayers());
 	}
 }

@@ -23,16 +23,16 @@ public class TennisPlayerApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info("\n\n>> Inserting Player: {}\n", repo.insertPlayer(
-				new Player("Djokovic", "Serbia", Date.valueOf("1987-05-22"), 81)
-		));
-
-		logger.info("\n\n>> Inserting Player: {}\n", repo.insertPlayer(
-				new Player("Monfils", "France", Date.valueOf("1986-09-01"), 10)
-		));
-
-		logger.info("\n\n>> Inserting Player: {}\n", repo.insertPlayer(
-				new Player("Thiem", "Austria", new Date(System.currentTimeMillis()), 17)));
+//		logger.info("\n\n>> Inserting Player: {}\n", repo.insertPlayer(
+//				new Player("Djokovic", "Serbia", Date.valueOf("1987-05-22"), 81)
+//		));
+//
+//		logger.info("\n\n>> Inserting Player: {}\n", repo.insertPlayer(
+//				new Player("Monfils", "France", Date.valueOf("1986-09-01"), 10)
+//		));
+//
+//		logger.info("\n\n>> Inserting Player: {}\n", repo.insertPlayer(
+//				new Player("Thiem", "Austria", new Date(System.currentTimeMillis()), 17)));
 
 //		logger.info("\n\n>> Player with id 2: {}\n", repo.getPlayerById(2));
 
@@ -44,6 +44,6 @@ public class TennisPlayerApplication implements CommandLineRunner {
 //
 //		repo.deleteById(2);
 
-		logger.info("All Players Data: {}", repo.getAllPlayers());
+//		logger.info("All Players Data: {}", repo.getAllPlayers());
 	}
 }

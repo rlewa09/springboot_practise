@@ -23,4 +23,8 @@ public class PlayerService {
         else throw new RuntimeException("Player with id "+ id + " not found.");
         return p;
     }
+
+    public Player addPlayer(Player p) {
+        return repo.save(p);
+    }
 }
